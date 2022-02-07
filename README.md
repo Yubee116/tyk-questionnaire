@@ -1,6 +1,6 @@
 # Tyk Questionnaire
 
-Tyk Questionnaire is a GH repo that lists Tyk specific configuration files for the take home assignment. Questions are purposely left blank on this GH repo on purpose to encourage a dynamic list each time.
+Tyk Questionnaire is a GH repo that lists Tyk specific configuration files for the take home assignment. Questions are purposely left blank on this GH repo to encourage a dynamic list each time.
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ Follow the [Tyk Pro Docker Demo](https://github.com/TykTechnologies/tyk-pro-dock
 
 ## Usage
 
-Once you've copied the relevant configuration files over, please call below command in your Tyk Pro Docker Demo root folder to replicate the questionnaires locally. 
+Once you've copied the relevant configuration files over, please call below command in your Tyk Pro Docker Demo root folder to replicate the questionnaires locally.
 
 ```bash
 docker-compose up
@@ -21,3 +21,5 @@ To see the new changes from your configuration files you'll need to `down` your 
 ```bash
 docker-compose down
 ```
+
+For any question that has only the API definition please import it onto your environment for testing purposes.
