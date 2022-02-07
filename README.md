@@ -8,3 +8,16 @@ Follow the [Tyk Pro Docker Demo](https://github.com/TykTechnologies/tyk-pro-dock
 
 **Friendly reminder that for Tyk Pro Docker Demo you will need an active License. Please reach out for a trial license**
 
+## Usage
+
+Once you've copied the relevant configuration files over, please call below command in your Tyk Pro Docker Demo root folder to replicate the questionnaires locally. 
+
+```bash
+docker-compose up
+```
+
+To see the new changes from your configuration files you'll need to `down` your environment and then `up` it again.
+
+```bash
+docker-compose down
+```
