@@ -360,7 +360,10 @@
     "domain": "",
     "certificates": [],
     "do_not_track": false,
-    "tags": ["aws-eu-central-1"],
+    "tags": [
+        "edge",
+        "aws-eu-central-1"
+    ],
     "enable_context_vars": false,
     "config_data": {},
     "tag_headers": [],
