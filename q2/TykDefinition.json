@@ -360,7 +360,7 @@
     "domain": "",
     "certificates": [],
     "do_not_track": false,
-    "tags": [],
+    "tags": ["aws-eu-central-1"],
     "enable_context_vars": false,
     "config_data": {},
     "tag_headers": [],
