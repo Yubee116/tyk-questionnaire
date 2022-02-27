@@ -42,6 +42,7 @@ Exit the Redis CLI and the terminal using `exit`
 Please follow these steps to delete a user from your MongoDB:
 
 ### **Prerequisites:**
+- Existing Tyk configured to use MongoDB
 - Terminal access to the MongoDB Container/Cluster
 - Emailaddress of the user you wish to delete
 
