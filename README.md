@@ -33,6 +33,7 @@ In this case, the name of the key is "apikey-{keyHash}", where {keyHash} is the 
 ```bash
 $ DEL apikey-{keyHash}
 ```
+Exit the Redis CLI and the terminal using `exit`
 <br>
 <br>
 
@@ -84,3 +85,4 @@ User emails are unique in the database collection. Find the user by their email 
 ```bash
 > db.tyk_analytics_users.remove({"emailaddress": "userEmail@gmail.com"})
 ```
+Exit the Mongo CLI and the terminal using `exit`
