@@ -1,25 +1,31 @@
-# Tyk Questionnaire
 
-Tyk Questionnaire is a GH repo that lists Tyk specific configuration files for the take home assignment. Questions are purposely left blank on this GH repo to encourage a dynamic list each time.
 
-## Prerequisites
-
-Follow the [Tyk Pro Docker Demo](https://github.com/TykTechnologies/tyk-pro-docker-demo) Github Repo to set up a local environment. Copy and paste the relevant *.env files from this repo onto the appropriate files from the Tyk Pro Docker Demo to replicate each question.
-
-**Friendly reminder that for Tyk Pro Docker Demo you will need an active License. Please reach out for a trial license**
-
-## Usage
-
-Once you've copied the relevant configuration files over, please call below command in your Tyk Pro Docker Demo root folder to replicate the questionnaires locally.
+## Question 6
+To open the Redis CommandLine interface:
 
 ```bash
-docker-compose up
+$ redis-cli
+```
+If your Redis cluster is hosted on the local machine, you should automatically drop into the Redis CLI tool as:
+```bash
+127.0.0.1:6379>
 ```
 
-To see the new changes from your configuration files you'll need to `down` your environment and then `up` it again.
+
+To list the keys in the Resis data store, use the `KEYS` command followed by a specific pattern. Redis will search the keys for all the keys matching the specified pattern.
+Use `*` to match all the keys in the datastore
+Use `apikey-*` to match only Tyk API keys would
 
 ```bash
-docker-compose down
+$ KEYS *  # list all keys in data store
+
+$ KEYS apikey-* # list apikeys
 ```
 
-For any question that has only the API definition please import it onto your environment for testing purposes.
+To delete specific API key, use the `DEL` command followed by the name of the key you wish to remove:
+The number of keys that were removed is returned; 1 in this case
+
+```bash
+$ DEL apikey-{keyHash}
+(integer) 1
+```
