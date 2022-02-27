@@ -87,3 +87,12 @@ User emails are unique in the database collection. Find the user by their email 
 > db.tyk_analytics_users.remove({"emailaddress": "userEmail@gmail.com"})
 ```
 Exit the Mongo CLI and the terminal using `exit`
+<br>
+<br>
+
+## Question 8
+
+Curl command to retrieve activity data of all endpoints called using the key 7f3c3ca87376cabe between February 10th 2020 and February 18th 2022, as run on my local machine:
+```bash
+$ curl -i -H "Authorization: 1c529b45dceb4283407313ee9ff5c079" http://localhost:3000/api/activity/keys/endpoint/7f3c3ca87376cabe/10/2/2022/18/2/2022
+```
