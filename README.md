@@ -1,31 +1,36 @@
 
 
 ## Question 6
-To open the Redis CommandLine interface:
+
+Please follow these steps to delete a key from your redis:
+
+### **Prerequisites:**
+- Terminal access to the Redis Container/Cluster
+- Keyhash of the key you wish to delete
+
+### **The Process**
+1. On the Redis container/cluster terminal, open the Redis CommandLine interface using:
 
 ```bash
 $ redis-cli
-```
-If your Redis cluster is hosted on the local machine, you should automatically drop into the Redis CLI tool as:
-```bash
-127.0.0.1:6379>
-```
+```  
+<br>
 
-
-To list the keys in the Resis data store, use the `KEYS` command followed by a specific pattern. Redis will search the keys for all the keys matching the specified pattern.
-Use `*` to match all the keys in the datastore
-Use `apikey-*` to match only Tyk API keys would
+2. To list the keys in the Resis data store, use the `KEYS` command followed by a specific pattern.    
+Use `*` to match all the keys in the datastore  
+Use `apikey-*` to match only Tyk API keys in the datastore 
 
 ```bash
 $ KEYS *  # list all keys in data store
 
 $ KEYS apikey-* # list apikeys
 ```
+<br>
 
-To delete specific API key, use the `DEL` command followed by the name of the key you wish to remove:
-The number of keys that were removed is returned; 1 in this case
+3. To delete a specific key, use the `DEL` command followed by the name of the key you wish to remove.  
+In this case, the name of the key is "apikey-{keyHash}", where {keyHash} is the actual hash of your API key
 
 ```bash
 $ DEL apikey-{keyHash}
-(integer) 1
 ```
+The number of keys that were removed is returned; 1 in this case
