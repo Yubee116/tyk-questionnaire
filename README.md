@@ -37,7 +37,19 @@ Exit the Redis CLI and the terminal using `exit`
 <br>
 <br>
 
-## Question 7
+## Question 7 (Delete User through Dashboard API using Curl)
+
+Curl command to delete a user, as run on my local machine:
+```bash
+$ curl -i -H "Authorization: 1c529b45dceb4283407313ee9ff5c079" -X DELETE http://localhost:3000/api/users/<user-id>
+```
+The Authorization is your Dashboard API Access Credentials  
+![image](https://user-images.githubusercontent.com/49939534/155908365-cc05c6f9-8eed-448d-bdc8-d72b9dc947a1.png)
+
+<br>
+<br>
+
+## Question 7 (Delete User in MongoDB)
 
 Please follow these steps to delete a user from your MongoDB:
 
@@ -96,3 +108,6 @@ Curl command to retrieve activity data of all endpoints called using the key 7f3
 ```bash
 $ curl -i -H "Authorization: 1c529b45dceb4283407313ee9ff5c079" http://localhost:3000/api/activity/keys/endpoint/7f3c3ca87376cabe/10/2/2022/18/2/2022
 ```
+The Authorization is your Dashboard API Access Credentials  
+![image](https://user-images.githubusercontent.com/49939534/155908365-cc05c6f9-8eed-448d-bdc8-d72b9dc947a1.png)
+
